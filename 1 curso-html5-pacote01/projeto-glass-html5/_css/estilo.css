@@ -35,8 +35,9 @@ a:hover {
 
 header#cabecalho img#icone {
     position: absolute;
-    left: 920px;
     top: 90px;
+    left: 50%; /*posiciona a margem esquerda do icone no centro da página*/
+    transform: translate(275px, 0px); /*desloca o objeto na abssissa e na ordenada por meio de uma distancia em pixels, em relação a posição anterior*/
 }
 
 header#cabecalho {
@@ -101,7 +102,9 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute; /*O objeto fica livre pelo site*/
     top: -20px;
-    left: 300px;
+    left: 50%; /*posiciona a margem esquerda no centro da página*/
+    transform: translate(-52%, 0); /*desloca o objeto em relação ao seu próprio tamanho na abssissa (eixo-x)*/
+    width: 600px;
 }
 
 nav#menu li {
@@ -128,6 +131,8 @@ nav#menu a {
 nav#menu a:hover {
     color: #ffffff;
 }
+
+/*Formatação das colunas da página*/
 
 section#corpo {
     display: block;
@@ -234,6 +239,16 @@ aside#lateral h2 {
     color: #ffffff;
     padding: 5px;
 }
+
+aside#lateral video#feeling {
+    width: 350px;
+}
+
+article#noticia-principal video#introvideo {
+    width: 520px;
+}
+
+/*Formatação rodapé*/
 
 footer#rodape{
     clear: both;
